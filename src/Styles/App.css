@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  background: #1a1b24;
+}
+
+body {
+  color: #a6a6a6;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  width: 800px;
+  padding: 50px 15px;
+}
+
+.post {
+  padding: 30px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 20px 0px #0000002b;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1f2c;
+}
+
+.post:last-child {
+  margin-bottom: 0;
+}
+
+.post__content strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post__content div {
+  font-size: 14px;
+}
+
+.post__btns button {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 0;
+  text-decoration: underline;
+  background: transparent;
+  cursor: pointer;
+  color: #a6a6a6;
+}
