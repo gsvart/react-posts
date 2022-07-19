@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import PostForm from "./Components/PostForm";
 import PostsList from "./Components/PostsList";
 
 import './Styles/App.css';
@@ -10,9 +11,18 @@ function App() {
     {id: 3, title: 'Javascript 3', body: 'Some description'},
   ]);
 
+  const createPost = newPost => {
+    setPosts([...posts, newPost]);
+  };
+
+  const removePost = target => {
+    setPosts(posts.filter(post => post.id !== target.id));
+  }
+
   return (
     <div className="App">
-      <PostsList posts={posts} title={'Posts about Javascript'}/>
+      <PostForm create={createPost}/>
+      <PostsList remove={removePost} posts={posts} title={'Posts about Javascript'}/>
     </div>
   );
 }

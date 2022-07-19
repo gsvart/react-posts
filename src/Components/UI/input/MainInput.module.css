@@ -1,0 +1,11 @@
+.mainInput {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  padding: 20px 30px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 18px;
+}
