@@ -62,3 +62,7 @@ body {
 form {
   margin-bottom: 30px;
 }
+
+.empty-box {
+  text-align: center;
+}
